@@ -1,0 +1,22 @@
+@startuml
+object "<u>ship0:Ship</u>" as Ship {
+    shipName = "Titanic"
+    yearBuilt = "March31st,1909"
+}
+
+object "<u>ship1:CruiseShip</u>" as CruiseShip {
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+    maxNumberPassengers = 100
+}
+
+object "<u>ship2:CargoShip</u>" as CargoShip {
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+    cargoCapacityInTonnage = 220940
+}
+
+Ship <|-- CruiseShip
+Ship <|-- CargoShip
+
+@enduml
